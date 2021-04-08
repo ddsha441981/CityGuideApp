@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Custom Menu Style-->
+    <style name="navigationTheme">
+
+        <!-- Color of Text and Icon When SELECTED -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Background Color When SELECTED -->
+        <item name="colorControlHighlight">@color/colorAccent</item>
+
+    </style>
+
+</resources>

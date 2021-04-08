@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/asset</item>
+        <item>@font/baloo</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/carter_one</item>
+        <item>@font/faster_one</item>
+        <item>@font/muli</item>
+        <item>@font/muli_black</item>
+        <item>@font/muli_extralight</item>
+        <item>@font/muli_light</item>
+    </array>
+</resources>

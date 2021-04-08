@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp"
+    android:transitionName="transition_forget_password"
+    tools:context=".Common.LoginSignup.MakeSelection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/general_back_icon" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/muli_black"
+            android:text="@string/make_selection"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:text="@string/make_selection_detail"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp">
+            
+            <ImageView
+                android:id="@+id/mobile_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mobile_custom_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/mobile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="@string/via_sms"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/mobile_icon"
+               android:layout_marginTop="35dp"/>
+
+            <TextView
+                android:id="@+id/mobile_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="+919602063435"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/mobile_icon"
+                android:layout_below="@id/mobile_title" />
+
+            <!-- To Cover Whole card and make a clickable all card-->
+            <Button
+                android:id="@+id/make_selection_via_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:transitionName="makeSelectionViaMobileTrans"
+                android:onClick="callOTPScreenForforGetPassword"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mail_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mail_custom_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/mail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="@string/via_mail"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/mail_icon"
+                android:layout_marginTop="35dp"/>
+
+            <TextView
+                android:id="@+id/mail_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="kkumawat1111@gmail.com"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/mail_icon"
+                android:layout_below="@id/mail_title" />
+
+
+            <!-- To Cover Whole card and make a clickable all card-->
+            <Button
+                android:id="@+id/make_selection_via_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:transitionName="transition_forget_password_via_email"
+                android:onClick="callForgetPasswordViaEmail"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
